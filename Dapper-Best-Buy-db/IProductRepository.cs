@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Dapper_Best_Buy_db
 {
-    public class Department
+    public interface IProductRepository
     {
-        public int DepartmentID { get; set; }
-        public string Name { get; set; }
+        public IEnumerable<Product> GetAllProducts();
+        
     }
 }

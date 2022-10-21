@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Dapper_Best_Buy_db
 {
-    internal interface IDepartmentRepository
+    public interface IDepartmentRepository
     {
+        public IEnumerable<Department> GetAllDepartments(); //Stubbed out method
     }
 }
